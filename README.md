@@ -1,4 +1,4 @@
-# General-Purpose Google Gemini Chatbot
+#  Google Gemini Chatbot
 
 ## Overview
 
