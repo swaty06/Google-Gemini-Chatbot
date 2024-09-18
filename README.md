@@ -70,6 +70,12 @@ The project demonstrates the potential of integrating state-of-the-art language 
     - If any issues arise, the chatbot will display a relevant error message to assist with troubleshooting.
     - Common errors might include invalid API keys, network issues, or unexpected input.
 
+
+## Live Demo
+
+You can find the app live here: [Click to Access the Chatbot](https://app-gemini-chatbot-kzuzu4ldkv2s2tgrjszvxw.streamlit.app/)
+
+
 ## Example Use Cases
 
 - **Customer Support**: Automate responses to frequently asked questions, improving efficiency and response time.
