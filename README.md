@@ -92,7 +92,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - **Google Gemini**: For providing the powerful language model that drives the chatbot's responses.
 - **Streamlit**: For enabling the creation of a user-friendly web interface.
 
-For any questions or additional information, feel free to contact me at [your-email@example.com].
+For any questions or additional information, feel free to contact me at [sujswa@example.com].
 
 ---
 
