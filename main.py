@@ -18,35 +18,13 @@ st.markdown(
 load_dotenv()
 
 # Configure Google Gemini API with your API key
-api_key = os.getenv("GOOGLE_API_KEY")
-if api_key:
-    genai.configure(api_key=api_key)
-    st.success("✅ API Key loaded successfully!")
-else:
-    st.error("❌ GOOGLE_API_KEY not found in environment variables!")
-
-# DEBUG SECTION - Remove this after fixing
-st.subheader("🔍 Debug: Available Models")
-try:
-    available_models = []
-    for m in genai.list_models():
-        if 'generateContent' in m.supported_generation_methods:
-            available_models.append(m.name)
-            st.write(f"✓ {m.name}")
-    
-    if not available_models:
-        st.warning("No models found that support generateContent")
-except Exception as e:
-    st.error(f"Error listing models: {e}")
-
-st.divider()
-# END DEBUG SECTION
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # Function to generate a response from the Gemini model
 def generate_gemini_response(prompt):
     try:
-        # Use the Gemini model for generating text
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        # Use Gemini 2.5 Flash (the newer, faster model)
+        model = genai.GenerativeModel("gemini-2.5-flash")
         response = model.generate_content(prompt)
         return response.text
     except Exception as e:
@@ -74,3 +52,4 @@ def app():
 
 if __name__ == "__main__":
     app()
+
